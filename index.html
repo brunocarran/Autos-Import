@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autos Import</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Autos Import</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#modelos">Nuestros modelos</a></li>
+                <li><a href="#oferta">Crea tu propia oferta</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="inicio">
+        <h2>Bienvenido a Autos Import</h2>
+        <p>Importamos el coche que deseas desde Alemania a España, sin que tengas que hacer nada.</p>
+        <ul>
+            <li>Pago seguro en fondo tipo escrow</li>
+            <li>Posibilidad de devolución bajo condiciones</li>
+            <li>Contratos claros y legales</li>
+            <li>Informe certificado del vehículo</li>
+            <li>Videollamada en directo con el coche</li>
+            <li>Nos encargamos de todo</li>
+            <li>Los precios más baratos del mercado</li>
+        </ul>
+    </section>
+
+    <section id="modelos">
+        <h2>Nuestros modelos</h2>
+        <div id="model-list">
+            <!-- Aquí irán los 20 coches de ejemplo -->
+        </div>
+    </section>
+
+    <section id="oferta">
+        <h2>Crea tu propia oferta</h2>
+        <form id="oferta-form">
+            <label for="marca">Marca:</label>
+            <select id="marca" name="marca">
+                <option value="audi">Audi</option>
+                <option value="bmw">BMW</option>
+                <option value="mercedes">Mercedes</option>
+                <option value="volkswagen">Volkswagen</option>
+            </select>
+
+            <label for="modelo">Modelo:</label>
+            <select id="modelo" name="modelo" onchange="mostrarImagenModelo()">
+                <option value="a3">A3</option>
+                <option value="serie3">Serie 3</option>
+                <option value="cclass">Clase C</option>
+                <option value="golf">Golf</option>
+            </select>
+
+            <div id="imagen-modelo"></div>
+
+            <label for="km">Kilometraje:</label>
+            <input type="text" name="km" id="km">
+
+            <label for="anio">Año:</label>
+            <input type="text" name="anio" id="anio">
+
+            <label for="color">Color:</label>
+            <input type="text" name="color" id="color">
+
+            <label for="cambio">Cambio:</label>
+            <select name="cambio" id="cambio">
+                <option value="manual">Manual</option>
+                <option value="automatico">Automático</option>
+            </select>
+
+            <label for="combustible">Combustible:</label>
+            <select name="combustible" id="combustible">
+                <option value="diesel">Diésel</option>
+                <option value="gasolina">Gasolina</option>
+                <option value="hibrido">Híbrido</option>
+                <option value="electrico">Eléctrico</option>
+            </select>
+
+            <label for="comentarios">¿Qué necesitas exactamente?</label>
+            <textarea name="comentarios" id="comentarios" rows="4"></textarea>
+
+            <button type="submit">Solicitar oferta</button>
+        </form>
+    </section>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <form id="contacto-form">
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" id="nombre" required>
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea name="mensaje" id="mensaje" rows="4" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Autos Import. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
